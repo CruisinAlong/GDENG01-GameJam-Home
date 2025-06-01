@@ -1,17 +1,16 @@
 using System.Collections;
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class CollectibleCollect : MonoBehaviour
 {
-    public float shrinkDuration = 0.5f;
+    public float shrinkDuration = 3.0f;
     public int scoreValue = 1;
-    public Transform spriteTransform; // Assign in Inspector or via code
+    public Transform spriteTransform;
 
     private bool isCollected = false;
 
     private void Awake()
     {
-        // Auto-assign if not set
         if (spriteTransform == null)
         {
             var sr = GetComponentInChildren<SpriteRenderer>();
@@ -20,13 +19,12 @@ public class Collectible : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (!isCollected && other.CompareTag("Player"))
+        if (!isCollected && other.CompareTag("Player") && PlayerModeManager.Instance.currentMode == PlayerMode.Collect)
         {
             isCollected = true;
             StartCoroutine(ShrinkAndCollect());
-            Debug.Log("Collectible collected by player!");
         }
     }
 
@@ -35,22 +33,21 @@ public class Collectible : MonoBehaviour
         Vector3 originalScale = spriteTransform != null ? spriteTransform.localScale : Vector3.one;
         float elapsed = 0f;
 
-        // Shrink the sprite visual only
         while (elapsed < shrinkDuration)
         {
-            float t = elapsed / shrinkDuration;
-            if (spriteTransform != null)
-                spriteTransform.localScale = Vector3.Lerp(originalScale, Vector3.zero, t);
-            elapsed += Time.deltaTime;
+            if (PlayerMovement.isMoving)
+            {
+                float t = elapsed / shrinkDuration;
+                if (spriteTransform != null)
+                    spriteTransform.localScale = Vector3.Lerp(originalScale, Vector3.zero, t);
+                elapsed += Time.deltaTime;
+            }
             yield return null;
         }
         if (spriteTransform != null)
             spriteTransform.localScale = Vector3.zero;
 
-        // Add score
         GameManager.Instance.AddScore(scoreValue);
-
-        // Destroy or deactivate the collectible
         Destroy(gameObject);
     }
 }

@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float rotationSpeed = 720f;
+    public float moveSpeed = 1f;
+    public float rotationSpeed = 45f;
     public Transform cameraTransform;
     public Vector3 cameraOffset = new Vector3(0, 2, -4);
+
+    public static bool isMoving = false;
 
     private void Start()
     {
         if (cameraTransform == null)
         {
-            // Try to find the main camera if not assigned
             cameraTransform = Camera.main.transform;
         }
     }
 
     private void Update()
     {
-        // Get input
-        float horizontal = Input.GetAxis("Horizontal"); // A/D or Left/Right arrows
-        float vertical = Input.GetAxis("Vertical");     // W/S or Up/Down arrows
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
         // Only rotate around the Y axis (player's own up axis) with A/D
         if (Mathf.Abs(horizontal) > 0.01f)
@@ -37,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
             Vector3 moveDir = transform.forward * vertical;
             transform.position += moveDir.normalized * moveSpeed * Time.deltaTime;
         }
+
+        // Set isMoving to true if any movement input is detected
+        isMoving = Mathf.Abs(horizontal) > 0.01f || Mathf.Abs(vertical) > 0.01f;
 
         // Camera follows the player's back at all costs
         if (cameraTransform != null)
