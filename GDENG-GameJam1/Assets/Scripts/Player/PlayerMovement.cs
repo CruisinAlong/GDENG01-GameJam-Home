@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform cameraTransform;
     public Vector3 cameraOffset = new Vector3(0, 2, -4);
 
+    public float liftSpeed = 1f; // Simple upward speed
+
     public static bool isMoving = false;
 
     private void Start()
@@ -36,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 moveDir = transform.forward * vertical;
             transform.position += moveDir.normalized * moveSpeed * Time.deltaTime;
+        }
+
+        // Simple lift upwards with spacebar
+        if (Input.GetKey(KeyCode.Space))
+        {
+            transform.position += Vector3.up * liftSpeed * Time.deltaTime;
         }
 
         // Set isMoving to true if any movement input is detected
