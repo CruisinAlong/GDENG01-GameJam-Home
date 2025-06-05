@@ -186,3 +186,175 @@ Received Import Request.
 Start importing Assets/Scenes/Living Room.unity using Guid(77306f3b63157924e819d6e9bc2cf51b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cc95c4e66604282c7d08dee11721e74') in 0.0232659 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+========================================================================
+Received Import Request.
+  Time since last request: 1343.691898 seconds.
+  path: Assets/low-poly-living-room-with-furniture/textures/Brick Wall Normal_3.png
+  artifactKey: Guid(fc95d095f759c734cbcd497e8edc82d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low-poly-living-room-with-furniture/textures/Brick Wall Normal_3.png using Guid(fc95d095f759c734cbcd497e8edc82d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e3e336c2dd67119b82752657dd630d0') in 0.2515616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/low-poly-living-room-with-furniture/textures/Wood Light Texture_2.png
+  artifactKey: Guid(a748803ec677f894c9c919d52c3d9eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low-poly-living-room-with-furniture/textures/Wood Light Texture_2.png using Guid(a748803ec677f894c9c919d52c3d9eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a420f7392080f5e6ebb8500d44c1f20') in 0.1054707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/low-poly-living-room-with-furniture/textures/Rug Texture_5.png
+  artifactKey: Guid(a36e283d80f2d55489f396135eb68fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low-poly-living-room-with-furniture/textures/Rug Texture_5.png using Guid(a36e283d80f2d55489f396135eb68fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4baa04e620bfce5089df6fff17ae005f') in 0.0134857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/low-poly-living-room-with-furniture/textures/Floor_Texture_1.png
+  artifactKey: Guid(156464af47f10f249849b273f43ee532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low-poly-living-room-with-furniture/textures/Floor_Texture_1.png using Guid(156464af47f10f249849b273f43ee532) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3dad6c48f368acdaa6c16a338dd470ab') in 0.0136141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/low-poly-living-room-with-furniture/textures/Floor_Normal_0.png
+  artifactKey: Guid(df7845458ff110640944a1ec5d1e23af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low-poly-living-room-with-furniture/textures/Floor_Normal_0.png using Guid(df7845458ff110640944a1ec5d1e23af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7e88e74ebaf471e19fb1a0e6e6795e7') in 0.0138829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/low-poly-living-room-with-furniture/textures/Glass Texture_7.png
+  artifactKey: Guid(f55a8f6cbb05afe4a896e7470cd1bba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low-poly-living-room-with-furniture/textures/Glass Texture_7.png using Guid(f55a8f6cbb05afe4a896e7470cd1bba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d6fbbd837f93bafb3b7f8ecb2f62efc') in 0.0129174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/low-poly-living-room-with-furniture/textures/Curtains Texture_8.png
+  artifactKey: Guid(449c35f7fc33c1148986ba3b7606e739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/low-poly-living-room-with-furniture/textures/Curtains Texture_8.png using Guid(449c35f7fc33c1148986ba3b7606e739) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01bee7dc71db30416fbe857861571274') in 0.0171423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.546109 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/bottle_2.fbx
+  artifactKey: Guid(986da2d76a4d93c46a89511e72654d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/bottle_2.fbx using Guid(986da2d76a4d93c46a89511e72654d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99813755860ddb8863cd84a3ca78cfeb') in 0.1946264 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/kitchen_cabinet.fbx
+  artifactKey: Guid(eac7c0193e16fc848a00d067cefea1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/kitchen_cabinet.fbx using Guid(eac7c0193e16fc848a00d067cefea1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c92a22fcd74d5954172ad5e26e530eb2') in 0.1733119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/Table.fbx
+  artifactKey: Guid(2e147a3f3658b914e981b92ed552a70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/Table.fbx using Guid(2e147a3f3658b914e981b92ed552a70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8648d975d51718f54f17a13f019c2705') in 0.0193803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/cloth.fbx
+  artifactKey: Guid(5713de40422d1e945891024e0fce5ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/cloth.fbx using Guid(5713de40422d1e945891024e0fce5ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b8521ab04e3690718551c8c1f4161ee') in 0.0205084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/cabinet_door.fbx
+  artifactKey: Guid(0498635aa9a18184b95d0aa7c3bd9213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/cabinet_door.fbx using Guid(0498635aa9a18184b95d0aa7c3bd9213) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12dff1fefac23f608cd413439a04f904') in 0.0202622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/pepper.fbx
+  artifactKey: Guid(aa0bcc27bec37dd4ba0b0163d5db10f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/pepper.fbx using Guid(aa0bcc27bec37dd4ba0b0163d5db10f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '209e12994386cc6785e70b60ca0e0093') in 0.0186999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/pan_2.fbx
+  artifactKey: Guid(41c90cc77d9705349a1d0eafb23b5914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/pan_2.fbx using Guid(41c90cc77d9705349a1d0eafb23b5914) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d3773dfd68d44ea3936596fc76836cd') in 0.0179264 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/kitchen_set.fbx
+  artifactKey: Guid(c9634d5f2fa0c784fa596e8606d17b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/kitchen_set.fbx using Guid(c9634d5f2fa0c784fa596e8606d17b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f30c38f545b4277ec179f87edcdd02f') in 0.0196442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/micro_door.fbx
+  artifactKey: Guid(a428e8fe5838bce40ab371d697c4064a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/micro_door.fbx using Guid(a428e8fe5838bce40ab371d697c4064a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95d2107f2edb042446ab1a8de49596e7') in 0.0242751 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/plate_2.fbx
+  artifactKey: Guid(21ee9e47ca6d6c8469d46ad18d1eb4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/plate_2.fbx using Guid(21ee9e47ca6d6c8469d46ad18d1eb4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3553fbd56b2f833c811b0a52402e8cf8') in 0.0222253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/knife_stand.fbx
+  artifactKey: Guid(19754f76469c53e47bdb3572a2e74586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/knife_stand.fbx using Guid(19754f76469c53e47bdb3572a2e74586) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a32e8908b45b5eb0893223f34071194a') in 0.0181764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/door_2.fbx
+  artifactKey: Guid(8db603c3edc376c44941fc7af4f150d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/door_2.fbx using Guid(8db603c3edc376c44941fc7af4f150d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1e2858a3956fa45bd53d8d73c082fd3') in 0.0438612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/sponge.fbx
+  artifactKey: Guid(5931b2a026be6e14eb76ff253057405a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/sponge.fbx using Guid(5931b2a026be6e14eb76ff253057405a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5052a3e25101f372fba9450d6a96819d') in 0.0238704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Low_poly_Kitchen_set/meshes/bread_toaster.fbx
+  artifactKey: Guid(62ed9242478ad22469bf23bafc7aa750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low_poly_Kitchen_set/meshes/bread_toaster.fbx using Guid(62ed9242478ad22469bf23bafc7aa750) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76d3d707a308bcff73603043b8d14bc2') in 0.0207266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
