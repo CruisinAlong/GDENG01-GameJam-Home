@@ -9,6 +9,8 @@ public class UIChangeMode : MonoBehaviour
     [SerializeField] Image collectUIImage;
     [SerializeField] Image vacuumUIImage;
     [SerializeField] Image broomUIImage;
+    
+    private Color defaultColor;
 
     void OnEnable()
     {
@@ -26,11 +28,12 @@ public class UIChangeMode : MonoBehaviour
     {
         if (PlayerModeManager.Instance.currentMode == PlayerMode.Collect)
         {
-            var defaultColor = collectUIImage.color;
+            defaultColor = collectUIImage.color;
             vacuumUIImage.color = defaultColor;
             broomUIImage.color = defaultColor;
-            defaultColor.a = 0;
-            collectUIImage.color = defaultColor;
+            var newColor = defaultColor;
+            newColor.a = 0;
+            collectUIImage.color = newColor;
         }
     }
 
@@ -39,32 +42,33 @@ public class UIChangeMode : MonoBehaviour
         switch (PlayerModeManager.Instance.currentMode)
         {
             case PlayerMode.Collect: 
+                vacuumUIImage.color = defaultColor;
+                broomUIImage.color = defaultColor;
                 var collectColor = collectUIImage.color;
-                vacuumUIImage.color = collectColor;
-                broomUIImage.color = collectColor;
                 collectColor.a = 0;
                 collectUIImage.color = collectColor;
                 break;
             case PlayerMode.Vacuum:
                 var vacuumColor = vacuumUIImage.color;
-                collectUIImage.color = vacuumColor;
-                broomUIImage.color = vacuumColor;
+                collectUIImage.color = defaultColor;
+                broomUIImage.color = defaultColor;
                 vacuumColor.a = 0;
                 vacuumUIImage.color = vacuumColor;
                 break;
             case PlayerMode.Spawn: 
                 var tempColor = broomUIImage.color;
-                collectUIImage.color = tempColor;
-                vacuumUIImage.color = tempColor;
+                collectUIImage.color = defaultColor;
+                vacuumUIImage.color = defaultColor;
                 tempColor.a = 0;
                 broomUIImage.color = tempColor;
                 break;
             default:
-                var defaultColor = collectUIImage.color;
+                defaultColor = collectUIImage.color;
                 vacuumUIImage.color = defaultColor;
                 broomUIImage.color = defaultColor;
-                defaultColor.a = 0;
-                collectUIImage.color = defaultColor;
+                var newColor = defaultColor;
+                newColor.a = 0;
+                collectUIImage.color = newColor;
                 break;
         }
     }
