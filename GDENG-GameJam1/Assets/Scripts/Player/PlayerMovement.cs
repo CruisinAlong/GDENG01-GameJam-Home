@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject mode4Object; // Assign in Inspector (the GameObject to activate in mode 4)
 
     public static bool isMoving = false;
+    
+    public LayerMask layerMask;
 
     private void Start()
     {
@@ -65,6 +68,18 @@ public class PlayerMovement : MonoBehaviour
                                   PlayerModeManager.Instance.currentMode == PlayerMode.Mode4;
             if (mode4Object.activeSelf != shouldBeActive)
                 mode4Object.SetActive(shouldBeActive);
+        
+        Debug.DrawRay(transform.position, transform.up, Color.red);
+    }
+
+    private void FixedUpdate()
+    {
+        bool touchGround = Physics.Raycast(transform.position, transform.up, 10f, layerMask);
+        Debug.Log(touchGround);
+        if (touchGround)
+        {
+            Debug.Log("True");
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum PlayerMode
 {
@@ -56,10 +57,21 @@ public class PlayerModeManager : MonoBehaviour
     {
         // Example: 1, 2, 3 keys to switch modes
         if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
             currentMode = PlayerMode.Collect;
+            EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.MOP_MODE);
+        }
+
         if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
             currentMode = PlayerMode.Vacuum;
+            EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.VACUUM_MODE);
+        }
+
         if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
             currentMode = PlayerMode.Spawn;
+            EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.BROOM_MODE);
+        }
     }
 }
