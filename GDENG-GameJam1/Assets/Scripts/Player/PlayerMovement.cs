@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public float liftSpeed = 1f; // Simple upward speed
 
     public static bool isMoving = false;
+    
+    public LayerMask layerMask;
 
     private void Start()
     {
@@ -54,6 +57,19 @@ public class PlayerMovement : MonoBehaviour
         {
             cameraTransform.position = transform.position + transform.rotation * cameraOffset;
             cameraTransform.LookAt(transform.position);
+        }
+        
+        Debug.DrawRay(transform.position, transform.up, Color.red);
+    }
+
+    private void FixedUpdate()
+    {
+        bool touchGround = Physics.Raycast(transform.position, transform.up, 10f, layerMask);
+        Debug.Log(touchGround);
+        if (touchGround)
+        {
+            Debug.Log("True");
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         }
     }
 }
