@@ -1,22 +1,21 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 1f;
+    public float moveSpeed = 5f;
     public float rotationSpeed = 45f;
     public Transform cameraTransform;
     public Vector3 cameraOffset = new Vector3(0, 2, -4);
 
     public float liftSpeed = 1f; // Simple upward speed
 
-    public GameObject mode4Object; // Assign in Inspector (the GameObject to activate in mode 4)
-
+    public GameObject mode4Object;
     public static bool isMoving = false;
-    
     public LayerMask layerMask;
+
+    private Rigidbody rb;
+    private float horizontalInput;
+    private float verticalInput;
 
     private void Start()
     {
@@ -24,35 +23,20 @@ public class PlayerMovement : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
+        if (mode4Object != null)
+            mode4Object.SetActive(false);
+
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        // Only rotate around the Y axis (player's own up axis) with A/D
-        if (Mathf.Abs(horizontal) > 0.01f)
-        {
-            float yRotation = horizontal * rotationSpeed * Time.deltaTime;
-            transform.Rotate(Vector3.up, yRotation, Space.Self);
-        }
-
-        // Move forward/backward in the direction the player is facing (W/S)
-        if (Mathf.Abs(vertical) > 0.01f)
-        {
-            Vector3 moveDir = transform.forward * vertical;
-            transform.position += moveDir.normalized * moveSpeed * Time.deltaTime;
-        }
-
-        // Simple lift upwards with spacebar
-        if (Input.GetKey(KeyCode.Space))
-        {
-            transform.position += Vector3.up * liftSpeed * Time.deltaTime;
-        }
+        // Cache input for use in FixedUpdate
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
 
         // Set isMoving to true if any movement input is detected
-        isMoving = Mathf.Abs(horizontal) > 0.01f || Mathf.Abs(vertical) > 0.01f;
+        isMoving = Mathf.Abs(horizontalInput) > 0.01f || Mathf.Abs(verticalInput) > 0.01f;
 
         // Camera follows the player's back at all costs
         if (cameraTransform != null)
@@ -68,19 +52,48 @@ public class PlayerMovement : MonoBehaviour
                                   PlayerModeManager.Instance.currentMode == PlayerMode.Mode4;
             if (mode4Object.activeSelf != shouldBeActive)
                 mode4Object.SetActive(shouldBeActive);
+            if (PlayerModeManager.Instance != null && PlayerModeManager.Instance.currentMode == PlayerMode.Mode4 && rb.velocity.y > 0f && !Input.GetKey(KeyCode.Space))
+            {
+                rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+            }
 
-            Debug.DrawRay(transform.position, transform.up, Color.red);
+
         }
     }
 
     private void FixedUpdate()
     {
+        // Handle rotation
+        if (Mathf.Abs(horizontalInput) > 0.01f)
+        {
+            float yRotation = horizontalInput * rotationSpeed * Time.fixedDeltaTime;
+            Quaternion deltaRotation = Quaternion.Euler(0, yRotation, 0);
+            rb.MoveRotation(rb.rotation * deltaRotation);
+        }
+
+        // Handle movement
+        if (Mathf.Abs(verticalInput) > 0.01f)
+        {
+            Vector3 moveDir = transform.forward * verticalInput;
+            rb.MovePosition(rb.position + moveDir.normalized * moveSpeed * Time.fixedDeltaTime);
+        }
+
+        // Handle vertical lift with physics
+        if (Input.GetKey(KeyCode.Space))
+        {
+            rb.velocity = new Vector3(rb.velocity.x, liftSpeed, rb.velocity.z);
+        }
+        else
+        {
+            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
+        }
+
+
+
         bool touchGround = Physics.Raycast(transform.position, transform.up, 10f, layerMask);
-        Debug.Log(touchGround);
         if (touchGround)
         {
-            Debug.Log("True");
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+            rb.MoveRotation(Quaternion.Euler(0, rb.rotation.eulerAngles.y, 0));
         }
     }
 }
