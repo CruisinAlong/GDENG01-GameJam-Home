@@ -68,8 +68,9 @@ public class PlayerMovement : MonoBehaviour
                                   PlayerModeManager.Instance.currentMode == PlayerMode.Mode4;
             if (mode4Object.activeSelf != shouldBeActive)
                 mode4Object.SetActive(shouldBeActive);
-        
-        Debug.DrawRay(transform.position, transform.up, Color.red);
+
+            Debug.DrawRay(transform.position, transform.up, Color.red);
+        }
     }
 
     private void FixedUpdate()
