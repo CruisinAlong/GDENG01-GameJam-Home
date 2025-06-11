@@ -8,7 +8,6 @@ public class CollectibleVacuum : MonoBehaviour
 
     private bool isPulling = false;
 
-    // Called by the VacuumHitbox
     public void TryStartVacuum(Transform player)
     {
         if (!isPulling)
@@ -26,6 +25,11 @@ public class CollectibleVacuum : MonoBehaviour
             yield return null;
         }
         GameManager.Instance.AddScore(scoreValue);
+
+        // Add energy on clean
+        if (PlayerEnergyManager.Instance != null)
+            PlayerEnergyManager.Instance.GainEnergy(PlayerEnergyManager.Instance.energyGainPerClean);
+
         Destroy(gameObject);
     }
 }

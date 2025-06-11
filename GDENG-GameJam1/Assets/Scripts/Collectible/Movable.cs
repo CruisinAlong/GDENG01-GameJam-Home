@@ -1,20 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movable : MonoBehaviour
 {
-    public int scoreValue = 1; // Score to add when collected by the Mode4 hitbox
+    public int scoreValue = 1;
 
-    // This method can be called by the Mode4 hitbox when this object enters it
     public void Collect()
     {
-        // Add to score
         GameManager.Instance.AddScore(scoreValue);
 
-        // Optionally, play a sound or effect here
+        // Add energy on clean
+        if (PlayerEnergyManager.Instance != null)
+            PlayerEnergyManager.Instance.GainEnergy(PlayerEnergyManager.Instance.energyGainPerClean);
 
-        // Destroy this object
         Destroy(gameObject);
     }
 }
