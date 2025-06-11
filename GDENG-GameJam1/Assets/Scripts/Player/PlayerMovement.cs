@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float liftSpeed = 1f; // Simple upward speed
 
+    public GameObject mode4Object; // Assign in Inspector (the GameObject to activate in mode 4)
+
     public static bool isMoving = false;
 
     private void Start()
@@ -54,6 +56,15 @@ public class PlayerMovement : MonoBehaviour
         {
             cameraTransform.position = transform.position + transform.rotation * cameraOffset;
             cameraTransform.LookAt(transform.position);
+        }
+
+        // Activate/deactivate the mode 4 object based on PlayerModeManager
+        if (mode4Object != null)
+        {
+            bool shouldBeActive = PlayerModeManager.Instance != null &&
+                                  PlayerModeManager.Instance.currentMode == PlayerMode.Mode4;
+            if (mode4Object.activeSelf != shouldBeActive)
+                mode4Object.SetActive(shouldBeActive);
         }
     }
 }
