@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float liftSpeed = 1f; // Simple upward speed
 
+    public GameObject mode4Object; // Assign in Inspector (the GameObject to activate in mode 4)
+
     public static bool isMoving = false;
     
     public LayerMask layerMask;
@@ -58,14 +60,26 @@ public class PlayerMovement : MonoBehaviour
             cameraTransform.position = transform.position + transform.rotation * cameraOffset;
             cameraTransform.LookAt(transform.position);
         }
-        
+
+        // Activate/deactivate the mode 4 object based on PlayerModeManager
+        if (mode4Object != null)
+        {
+            bool shouldBeActive = PlayerModeManager.Instance != null &&
+                                  PlayerModeManager.Instance.currentMode == PlayerMode.Mode4;
+            if (mode4Object.activeSelf != shouldBeActive)
+                mode4Object.SetActive(shouldBeActive);
+
+            Debug.DrawRay(transform.position, transform.up, Color.red);
+        }
     }
 
     private void FixedUpdate()
     {
         bool touchGround = Physics.Raycast(transform.position, transform.up, 10f, layerMask);
+        Debug.Log(touchGround);
         if (touchGround)
         {
+            Debug.Log("True");
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         }
     }

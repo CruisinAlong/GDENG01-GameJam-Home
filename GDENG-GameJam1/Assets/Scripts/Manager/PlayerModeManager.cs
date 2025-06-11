@@ -1,16 +1,21 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public enum PlayerMode
 {
-    Collect,    // Mode 1: Collectible shrink (original)
-    Vacuum,     // Mode 2: Pull with left click
-    Spawn       // Mode 3: Scroll to collect and spawn new objects
+    Collect,
+    Vacuum,
+    Spawn,
+    Mode4 
 }
+
 
 public class PlayerModeManager : MonoBehaviour
 {
-    public static PlayerModeManager Instance { get; private set; }
+
+    private HashSet<PlayerMode> unlockedModes = new HashSet<PlayerMode> { PlayerMode.Collect };
+    public static PlayerModeManager Instance { get; private set; }  
     public PlayerMode currentMode = PlayerMode.Collect;
 
     private void Awake()
@@ -20,6 +25,33 @@ public class PlayerModeManager : MonoBehaviour
         else
             Destroy(gameObject);
     }
+
+
+    public void SetUnlockedModes(List<PlayerMode> modes)
+    {
+        unlockedModes = new HashSet<PlayerMode>(modes);
+        // Optionally, reset currentMode if it's now locked
+        if (!unlockedModes.Contains(currentMode))
+            if (unlockedModes.Count > 0)
+            {
+                foreach (var mode in unlockedModes)
+                {
+                    currentMode = mode;
+                    break;
+                }
+            }
+            else
+            {
+                currentMode = PlayerMode.Collect;
+            }
+
+    }
+
+    public bool IsModeUnlocked(PlayerMode mode)
+    {
+        return unlockedModes.Contains(mode);
+    }
+
 
     private void Update()
     {
