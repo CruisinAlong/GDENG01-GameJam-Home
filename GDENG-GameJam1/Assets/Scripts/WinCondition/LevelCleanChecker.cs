@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -5,7 +6,7 @@ public class LevelCleanChecker : MonoBehaviour
 {
     public int totalScoreToWin { get; private set; }
     public GameObject winPanel;
-
+    
     private void Start()
     {
         totalScoreToWin = 0;
