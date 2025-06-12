@@ -22,7 +22,7 @@ public class LevelCleanChecker : MonoBehaviour
             totalScoreToWin += mop.scoreValue;
 
         foreach (var brush in FindObjectsByType<CollectibleSpawn>(FindObjectsSortMode.None))
-            totalScoreToWin += brush.scoreValue;
+            totalScoreToWin += brush.scoreValue * 4;
 
         Debug.Log($"[LevelCleanChecker] Total score to win: {totalScoreToWin}");
     }
