@@ -57,6 +57,7 @@ public class EventNames {
 		public const string BROOM_MODE = "BROOM_MODE";
 		public const string VACUUM_MODE = "VACUUM_MODE";
         public const string MODE4 = "MODE4";
+		public const string PAUSEMODE = "PAUSEMODE";
     }
 
 	public class SFXNames
