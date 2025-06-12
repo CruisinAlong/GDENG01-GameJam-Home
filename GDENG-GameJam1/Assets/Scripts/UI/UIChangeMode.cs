@@ -70,9 +70,9 @@ public class UIChangeMode : MonoBehaviour
                 break;
             case PlayerMode.Mode4:
                 var mode4Color = clawUIImage.color;
-                collectUIImage.color = mode4Color;
-                vacuumUIImage.color = mode4Color;
-                broomUIImage.color = mode4Color;
+                collectUIImage.color = defaultColor;
+                vacuumUIImage.color = defaultColor;
+                broomUIImage.color = defaultColor;
                 mode4Color.a = 0;
                 clawUIImage.color = mode4Color;
                 break;
