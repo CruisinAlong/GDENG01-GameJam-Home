@@ -301,6 +301,9 @@ MonoBehaviour:
   drainRate: 5
   energyGainPerClean: 10
   batteryFillImage: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  flashingBatteryImage: {fileID: 0}
+  blinkInterval: 0.5
 --- !u!1 &2130968038489383006
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,15 +860,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.011148
+      value: 15.879748
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 108.34403
+      value: 245.39146
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 7.011148
+      value: 15.879748
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -873,11 +876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -45.712704
+      value: -88
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.532595
+      value: -45.5
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalRotation.w
