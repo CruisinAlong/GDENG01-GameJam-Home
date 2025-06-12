@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public int score = 0;
-    public TextMeshProUGUI scoreText; // Assign in Inspector
+    public TextMeshProUGUI scoreText; 
 
     private void Awake()
     {

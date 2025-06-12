@@ -50,6 +50,14 @@ public class EventNames {
 		public const string ON_FIRST_SCAN = "FIRST_TARGET_SCAN";
 		public const string ON_FINAL_SCAN = "ON_FINAL_SCAN";
 	}
+
+	public class PlayerMode
+	{
+		public const string MOP_MODE = "MOP_MODE";
+		public const string BROOM_MODE = "BROOM_MODE";
+		public const string VACUUM_MODE = "VACUUM_MODE";
+        public const string MODE4 = "MODE4";
+    }
 }
 
 
