@@ -14,7 +14,6 @@ public class PlayerEnergyManager : MonoBehaviour
 
     public Image batteryFillImage;
     public GameObject gameOverPanel;
-    public GameObject pausePanel;
     public Image flashingBatteryImage;
     public float blinkInterval = 0.5f; // Time in seconds between blinks
 

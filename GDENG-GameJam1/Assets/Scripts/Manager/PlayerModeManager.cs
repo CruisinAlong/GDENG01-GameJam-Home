@@ -79,11 +79,6 @@ public class PlayerModeManager : MonoBehaviour
             currentMode = PlayerMode.Mode4;
             EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.MODE4);
         }
-
-        /// Pause Menu when called
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            currentMode = PlayerMode.Pause;
-        }
+        
     }
 }

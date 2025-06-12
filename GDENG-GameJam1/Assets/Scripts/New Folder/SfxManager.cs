@@ -162,4 +162,20 @@ public class SfxManager : MonoBehaviour
             }
         }
     }
+
+    public void StopAllSFX()
+    {
+        if (activePool == null) return;
+
+        foreach (SFXInstance instance in activePool)
+        {
+            if (instance.audioSource != null && instance.audioSource.isPlaying)
+            {
+                instance.audioSource.Stop();
+                instance.audioSource.gameObject.SetActive(false); // If you pool GameObjects
+            }
+        }
+
+        activePool.Clear();
+    }
 }

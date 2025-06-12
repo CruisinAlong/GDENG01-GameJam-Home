@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovementSound()
     {
-        if (isMoving)
+        if (isMoving && Time.timeScale > 0)
         { 
             SfxManager.instance.PlayLoopingSFX(EventNames.SFXNames.ROOMBA, 0.2f);
         }
