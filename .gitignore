@@ -27,17 +27,6 @@ GDENG-GameJam1/Assets/Plugins/Editor/JetBrains*
 ExportedObj/
 .consulo/
 *.csproj
-*.unityproj
-*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
 *.opendb
 *.VC.db
 
@@ -57,6 +46,7 @@ GDENG-GameJam1/sysinfo.txt
 
 # Crashlytics
 GDENG-GameJam1/crashlytics-build.properties
+
 
 # Addressables
 GDENG-GameJam1/Assets/AddressableAssetsData/*/*.bin*
