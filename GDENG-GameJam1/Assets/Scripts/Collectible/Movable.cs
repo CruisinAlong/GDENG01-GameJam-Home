@@ -11,7 +11,8 @@ public class Movable : MonoBehaviour
         // Add energy on clean
         if (PlayerEnergyManager.Instance != null)
             PlayerEnergyManager.Instance.GainEnergy(PlayerEnergyManager.Instance.energyGainPerClean);
-
+        if (CleanableCounter.Instance != null)
+            CleanableCounter.Instance.DecrementCleanable();
         Destroy(gameObject);
     }
 }
