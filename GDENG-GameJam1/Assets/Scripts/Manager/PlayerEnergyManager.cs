@@ -27,6 +27,7 @@ public class PlayerEnergyManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+        
     }
 
     private void Start()
