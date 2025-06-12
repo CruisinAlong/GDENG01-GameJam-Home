@@ -28,6 +28,7 @@ public class CollectibleSpawn : MonoBehaviour
             Mathf.Abs(Input.GetAxis("Mouse ScrollWheel")) > 0.01f)
         {
             isCollected = true;
+            SfxManager.instance.PlaySFX(EventNames.SFXNames.BRUSH,0.5f);
             StartCoroutine(ShrinkAndSpawn());
         }
     }

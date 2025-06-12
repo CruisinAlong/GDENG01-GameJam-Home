@@ -24,6 +24,7 @@ public class Mop : MonoBehaviour
         if (!isCollected && other.CompareTag("Player") && PlayerModeManager.Instance.currentMode == PlayerMode.Collect)
         {
             isCollected = true;
+            SfxManager.instance.PlaySFX(EventNames.SFXNames.MOP, 0.5f);
             StartCoroutine(ShrinkAndCollect());
         }
     }

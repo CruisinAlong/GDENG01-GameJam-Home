@@ -33,9 +33,13 @@ public class LevelCleanChecker : MonoBehaviour
         Debug.Log($"[LevelCleanChecker] Player score: {playerScore}, Needed: {totalScoreToWin}");
         if (playerScore >= totalScoreToWin)
         {
+            EventBroadcaster.Instance.PostEvent(EventNames.SFXNames.STOP_BG);
             Debug.Log("Level is fully cleaned! (Score-based)");
             if (winPanel != null)
+            {
                 winPanel.SetActive(true);
+                SfxManager.instance.PlaySFX(EventNames.SFXNames.WIN,0.6f);
+            }
             // Optionally, pause the game here
             // Time.timeScale = 0f;
         }

@@ -37,7 +37,9 @@ public class PlayerMovement : MonoBehaviour
 
         // Set isMoving to true if any movement input is detected
         isMoving = Mathf.Abs(horizontalInput) > 0.01f || Mathf.Abs(verticalInput) > 0.01f;
-
+        
+        HandleMovementSound();
+        
         // Camera follows the player's back at all costs
         if (cameraTransform != null)
         {
@@ -58,6 +60,18 @@ public class PlayerMovement : MonoBehaviour
             }
 
 
+        }
+    }
+
+    private void HandleMovementSound()
+    {
+        if (isMoving)
+        { 
+            SfxManager.instance.PlayLoopingSFX(EventNames.SFXNames.ROOMBA, 0.2f);
+        }
+        else
+        {
+            SfxManager.instance.StopSFX(EventNames.SFXNames.ROOMBA);
         }
     }
 

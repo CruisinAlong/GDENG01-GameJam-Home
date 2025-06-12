@@ -9,11 +9,13 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
+        SfxManager.instance.PlaySFX(EventNames.SFXNames.CLICK);
         SceneManager.LoadScene("Kitchen");
     }
 
     public void ExitGame()
     {
+        SfxManager.instance.PlaySFX(EventNames.SFXNames.CLICK);
         Application.Quit();
     }
 }
