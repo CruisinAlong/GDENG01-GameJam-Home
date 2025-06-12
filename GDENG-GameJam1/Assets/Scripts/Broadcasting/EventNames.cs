@@ -59,6 +59,24 @@ public class EventNames {
         public const string MODE4 = "MODE4";
 		public const string PAUSEMODE = "PAUSEMODE";
     }
+
+	public class SFXNames
+	{
+		public const string BRUSH = "Brush";
+		public const string CLICK = "Click";
+		public const string MOP = "Mop";
+		public const string ROOMBA = "Roomba";
+		public const string SUCTION = "Suction";
+		public const string WIN = "Win";
+		public const string BG_CONVERSATION = "Conversation_BG";
+		public const string BG_CHEER = "Cheer_BG";
+		public const string BG_LAUGHING = "Laughing_BG";
+		public const string BG_TV = "TV_BG";
+		public const string BG_WHISTLE = "Whistle_BG";
+		
+		public const string STOP_BG = "STOP_BG";
+		
+	}
 }
 
 
