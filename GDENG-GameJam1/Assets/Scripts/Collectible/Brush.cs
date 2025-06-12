@@ -59,6 +59,11 @@ public class CollectibleSpawn : MonoBehaviour
         }
 
         GameManager.Instance.AddScore(scoreValue);
+
+        // Add energy on clean
+        if (PlayerEnergyManager.Instance != null)
+            PlayerEnergyManager.Instance.GainEnergy(PlayerEnergyManager.Instance.energyGainPerClean);
+
         Destroy(gameObject);
     }
 }

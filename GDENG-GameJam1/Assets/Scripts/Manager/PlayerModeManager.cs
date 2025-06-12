@@ -73,5 +73,10 @@ public class PlayerModeManager : MonoBehaviour
             currentMode = PlayerMode.Spawn;
             EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.BROOM_MODE);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            currentMode = PlayerMode.Mode4;
+            EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.MODE4);
+        }
     }
 }

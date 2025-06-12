@@ -56,7 +56,8 @@ public class EventNames {
 		public const string MOP_MODE = "MOP_MODE";
 		public const string BROOM_MODE = "BROOM_MODE";
 		public const string VACUUM_MODE = "VACUUM_MODE";
-	}
+        public const string MODE4 = "MODE4";
+    }
 }
 
 

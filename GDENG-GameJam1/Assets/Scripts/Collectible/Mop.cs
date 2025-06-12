@@ -48,6 +48,11 @@ public class CollectibleCollect : MonoBehaviour
             spriteTransform.localScale = Vector3.zero;
 
         GameManager.Instance.AddScore(scoreValue);
+
+        // Add energy on clean
+        if (PlayerEnergyManager.Instance != null)
+            PlayerEnergyManager.Instance.GainEnergy(PlayerEnergyManager.Instance.energyGainPerClean);
+
         Destroy(gameObject);
     }
 }
