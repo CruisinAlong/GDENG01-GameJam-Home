@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 6187567729813594208}
   - component: {fileID: 2723253409215654124}
   - component: {fileID: 4149246718860432410}
+  - component: {fileID: 7831620494140638046}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -255,7 +256,7 @@ MonoBehaviour:
   mode4Object: {fileID: 0}
   layerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
 --- !u!54 &4149246718860432410
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -283,6 +284,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7831620494140638046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968538535543161304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 879276cb362642c4f92c2d707fb72a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnergy: 100
+  currentEnergy: 100
+  drainRate: 5
+  energyGainPerClean: 10
+  batteryFillImage: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  flashingBatteryImage: {fileID: 0}
+  blinkInterval: 0.5
 --- !u!1 &2130968038489383006
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,15 +860,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.011148
+      value: 15.879748
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 108.34403
+      value: 245.39146
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 7.011148
+      value: 15.879748
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -855,11 +876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -45.712704
+      value: -88
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.532595
+      value: -45.5
       objectReference: {fileID: 0}
     - target: {fileID: 329594033658925719, guid: 70d8ead0b6415534fbdb1867c86ea09f, type: 3}
       propertyPath: m_LocalRotation.w

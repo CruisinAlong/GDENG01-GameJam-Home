@@ -6,8 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public int score = 0;
-    public TextMeshProUGUI scoreText; 
+    public int score = 0; 
 
     private void Awake()
     {
@@ -20,12 +19,8 @@ public class GameManager : MonoBehaviour
     public void AddScore(int value)
     {
         score += value;
-        UpdateScoreUI();
-    }
-
-    private void UpdateScoreUI()
-    {
-        if (scoreText != null)
-            scoreText.text = "Score: " + score;
+        LevelCleanChecker checker = FindFirstObjectByType<LevelCleanChecker>();
+        if (checker != null)
+            checker.CheckWinCondition(score);
     }
 }

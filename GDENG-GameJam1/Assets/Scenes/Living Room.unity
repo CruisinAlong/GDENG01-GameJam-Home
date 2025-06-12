@@ -7259,6 +7259,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1358108347}
     - target: {fileID: 2723253409215654124, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
+      propertyPath: cameraOffset.z
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723253409215654124, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
       propertyPath: layerMask.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -7378,6 +7382,26 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 963478437}
+    - target: {fileID: 8684891556792129211, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
+      propertyPath: m_Size.x
+      value: 7.403212
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684891556792129211, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
+      propertyPath: m_Size.z
+      value: 8.301868
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684891556792129211, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
+      propertyPath: m_Center.x
+      value: 0.29615584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684891556792129211, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
+      propertyPath: m_Center.y
+      value: 3.3208373
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684891556792129211, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
+      propertyPath: m_Center.z
+      value: 4.0411396
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6824009082848419728, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
     - {fileID: 2993126840647154997, guid: 4c1311b0f3da1cd4584814fd17fbf190, type: 3}
