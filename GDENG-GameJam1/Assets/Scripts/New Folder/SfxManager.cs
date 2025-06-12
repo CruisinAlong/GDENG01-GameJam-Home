@@ -101,7 +101,7 @@ public class SfxManager : MonoBehaviour
             audioSource.clip = sfxClipLookup[name];
             audioSource.volume = volume;
             audioSource.loop = false;
-
+            audioSource.gameObject.SetActive(true);
             SFXInstance instance = new SFXInstance(name, audioSource);
             activePool.Add(instance);
 
@@ -117,7 +117,6 @@ public class SfxManager : MonoBehaviour
 
     private IEnumerator DeactivateAudio(AudioSource audioSource, float clipLength, string name)
     {
-        audioSource.gameObject.SetActive(true);
         audioSource.Play();
         yield return new WaitForSeconds(clipLength);
         StopSFX(name);

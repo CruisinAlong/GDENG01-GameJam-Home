@@ -38,7 +38,7 @@ public class LevelCleanChecker : MonoBehaviour
             if (winPanel != null)
             {
                 winPanel.SetActive(true);
-                SfxManager.instance.PlaySFX(EventNames.SFXNames.WIN,0.6f);
+                SfxManager.instance.PlaySFX(EventNames.SFXNames.WIN,0.4f);
             }
             // Optionally, pause the game here
             // Time.timeScale = 0f;
