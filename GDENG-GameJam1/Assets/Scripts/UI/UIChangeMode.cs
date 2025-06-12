@@ -9,6 +9,7 @@ public class UIChangeMode : MonoBehaviour
     [SerializeField] Image collectUIImage;
     [SerializeField] Image vacuumUIImage;
     [SerializeField] Image broomUIImage;
+    [SerializeField] Image clawUIImage;
     
     private Color defaultColor;
 
@@ -17,6 +18,7 @@ public class UIChangeMode : MonoBehaviour
         EventBroadcaster.Instance.AddObserver(EventNames.PlayerMode.BROOM_MODE,UpdateImageUI);
         EventBroadcaster.Instance.AddObserver(EventNames.PlayerMode.VACUUM_MODE,UpdateImageUI); 
         EventBroadcaster.Instance.AddObserver(EventNames.PlayerMode.MOP_MODE,UpdateImageUI);
+        EventBroadcaster.Instance.AddObserver(EventNames.PlayerMode.MODE4,UpdateImageUI);
     }
 
     void OnDisable()
@@ -31,6 +33,7 @@ public class UIChangeMode : MonoBehaviour
             defaultColor = collectUIImage.color;
             vacuumUIImage.color = defaultColor;
             broomUIImage.color = defaultColor;
+            clawUIImage.color = defaultColor;
             var newColor = defaultColor;
             newColor.a = 0;
             collectUIImage.color = newColor;
@@ -44,6 +47,7 @@ public class UIChangeMode : MonoBehaviour
             case PlayerMode.Collect: 
                 vacuumUIImage.color = defaultColor;
                 broomUIImage.color = defaultColor;
+                clawUIImage.color = defaultColor;
                 var collectColor = collectUIImage.color;
                 collectColor.a = 0;
                 collectUIImage.color = collectColor;
@@ -52,6 +56,7 @@ public class UIChangeMode : MonoBehaviour
                 var vacuumColor = vacuumUIImage.color;
                 collectUIImage.color = defaultColor;
                 broomUIImage.color = defaultColor;
+                clawUIImage.color = defaultColor;
                 vacuumColor.a = 0;
                 vacuumUIImage.color = vacuumColor;
                 break;
@@ -59,13 +64,23 @@ public class UIChangeMode : MonoBehaviour
                 var tempColor = broomUIImage.color;
                 collectUIImage.color = defaultColor;
                 vacuumUIImage.color = defaultColor;
+                clawUIImage.color = defaultColor;
                 tempColor.a = 0;
                 broomUIImage.color = tempColor;
+                break;
+            case PlayerMode.Mode4:
+                var mode4Color = clawUIImage.color;
+                collectUIImage.color = defaultColor;
+                vacuumUIImage.color = defaultColor;
+                broomUIImage.color = defaultColor;
+                mode4Color.a = 0;
+                clawUIImage.color = mode4Color;
                 break;
             default:
                 defaultColor = collectUIImage.color;
                 vacuumUIImage.color = defaultColor;
                 broomUIImage.color = defaultColor;
+                clawUIImage.color = defaultColor;
                 var newColor = defaultColor;
                 newColor.a = 0;
                 collectUIImage.color = newColor;

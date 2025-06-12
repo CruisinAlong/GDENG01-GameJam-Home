@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class CollectibleCollect : MonoBehaviour
+public class Mop : MonoBehaviour
 {
     public float shrinkDuration = 3.0f;
     public int scoreValue = 1;

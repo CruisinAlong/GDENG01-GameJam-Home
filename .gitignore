@@ -64,6 +64,19 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+
 # Crashlytics generated file
 crashlytics-build.properties
 
@@ -76,4 +89,8 @@ GDENG-GameJam1/[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
 
+# Addressables
+GDENG-GameJam1/Assets/AddressableAssetsData/*/*.bin*
+GDENG-GameJam1/Assets/StreamingAssets/aa.meta
+GDENG-GameJam1/Assets/StreamingAssets/aa/*
 
