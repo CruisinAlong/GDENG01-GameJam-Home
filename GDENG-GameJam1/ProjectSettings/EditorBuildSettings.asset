@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dining Room.unity
     guid: 7c1152e72ec2a5049bb8f9e5cffbdf63
+  - enabled: 1
+    path: Assets/Scenes/End Screen.unity
+    guid: 4b04b53a33fb07e4a93daa8b8c2652ba
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -24,6 +24,7 @@ public class CleanableCounter : MonoBehaviour
         cleanablesLeft += Object.FindObjectsByType<CollectibleVacuum>(FindObjectsSortMode.None).Length;
         cleanablesLeft += Object.FindObjectsByType<Mop>(FindObjectsSortMode.None).Length;
         cleanablesLeft += Object.FindObjectsByType<CollectibleSpawn>(FindObjectsSortMode.None).Length * 4;
+        
 
         Parameters cleanables = new Parameters();
         cleanables.PutExtra(EventNames.Clean_Events.PARAM_CLEANABLES_LEFT, cleanablesLeft);
