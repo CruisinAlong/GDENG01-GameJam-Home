@@ -25,18 +25,16 @@ public class CleanableCounter : MonoBehaviour
         cleanablesLeft += Object.FindObjectsByType<Mop>(FindObjectsSortMode.None).Length;
         cleanablesLeft += Object.FindObjectsByType<CollectibleSpawn>(FindObjectsSortMode.None).Length * 4;
 
-        UpdateUI();
+        Parameters cleanables = new Parameters();
+        cleanables.PutExtra(EventNames.Clean_Events.PARAM_CLEANABLES_LEFT, cleanablesLeft);
+        EventBroadcaster.Instance.PostEvent(EventNames.Clean_Events.NUM_CLEANABLES_LEFT, cleanables);
     }
 
     public void DecrementCleanable()
     {
         cleanablesLeft = Mathf.Max(0, cleanablesLeft - 1);
-        UpdateUI();
-    }
-
-    private void UpdateUI()
-    {
-        if (cleanablesLeftText != null)
-            cleanablesLeftText.text = $"To Clean: {cleanablesLeft}";
+        Parameters cleanables = new Parameters();
+        cleanables.PutExtra(EventNames.Clean_Events.PARAM_CLEANABLES_LEFT, cleanablesLeft);
+        EventBroadcaster.Instance.PostEvent(EventNames.Clean_Events.NUM_CLEANABLES_LEFT, cleanables);
     }
 }
