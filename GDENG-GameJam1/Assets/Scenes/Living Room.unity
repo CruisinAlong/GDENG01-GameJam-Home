@@ -1821,6 +1821,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166945925}
   m_Mesh: {fileID: 3965641187870467659, guid: 268489c03c080db4ebc5c04c17130c41, type: 3}
+--- !u!114 &175393818 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2064768178813983849, guid: 6e66170322c083648b619b8921209d02, type: 3}
+  m_PrefabInstance: {fileID: 798033289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &212245653
 GameObject:
   m_ObjectHideFlags: 0
@@ -6396,6 +6407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Broom
       objectReference: {fileID: 0}
+    - target: {fileID: 4355640412872096961, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: m_Name
+      value: Sub-text
+      objectReference: {fileID: 0}
     - target: {fileID: 4361099310900501250, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: m_Name
       value: Vacuum
@@ -6492,6 +6507,33 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: subText
+      value: 
+      objectReference: {fileID: 1986858381}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: headerText
+      value: 
+      objectReference: {fileID: 175393818}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[0].header
+      value: Movie Mayhem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[1].header
+      value: New Mode!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[0].subText
+      value: What was going to be a relaxing movie session turned awry, oh well,
+        better get to cleaning! The family chased out the animal that got in after
+        someone opened the window, but look at that mess!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[1].subText
+      value: 'The family has given you a new weapon of doom! (For dirty stains at
+        least.) Using the brush needs you to use the SCROLL WHEEL when over a mess. '
+      objectReference: {fileID: 0}
     - target: {fileID: 7858109395079206849, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: m_Name
       value: GameUI
@@ -6519,6 +6561,10 @@ PrefabInstance:
     - target: {fileID: 8354320785317994865, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384282075902170871, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: m_Name
+      value: Header
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14157,6 +14203,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957786065}
   m_Mesh: {fileID: 418144587061928940, guid: 268489c03c080db4ebc5c04c17130c41, type: 3}
+--- !u!114 &1986858381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4604483539491208430, guid: 6e66170322c083648b619b8921209d02, type: 3}
+  m_PrefabInstance: {fileID: 798033289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1996530393 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6826801521837705444, guid: 6e66170322c083648b619b8921209d02, type: 3}

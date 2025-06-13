@@ -3652,6 +3652,10 @@ PrefabInstance:
       propertyPath: energyGainPerClean
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 4355640412872096961, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: m_Name
+      value: Sub-Text
+      objectReference: {fileID: 0}
     - target: {fileID: 4361099310900501250, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: m_Name
       value: Vacuum
@@ -3744,6 +3748,74 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: subText
+      value: 
+      objectReference: {fileID: 1468590851}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: headerText
+      value: 
+      objectReference: {fileID: 694840932}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[0].header
+      value: Welcome Home!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[1].header
+      value: Mop
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[2].header
+      value: Vacuum
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[3].header
+      value: Moving Around
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[4].header
+      value: Your Future Potential
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[5].header
+      value: Get cleaning!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[0].subText
+      value: The family just bought a new RoboCleaner! As a state of the art cleaning
+        robot your job is to handle the messes of the family! As you can see... You've
+        got your work cut out for you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[1].subText
+      value: You are equipped with a mop, when approaching a mess with this equipped,
+        move around with the WASD keys, and you'll clean that spill up in no time!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[2].subText
+      value: You are also equipped with a vacuum, but not just any ordinary one,
+        this one can suck up even the most unexpected things, a piece of bread, maybe
+        even a plant pot! All you need to do is hold left click.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[3].subText
+      value: You're also equipped with a hover booster! Hold the spacebar to reach
+        spaces no other robotic cleaner can on their own!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[4].subText
+      value: The family hasn't bought them yet, but with the way things are going,
+        as a modular RoboCleaner, you can have more modes of cleaning, but you don't
+        need them now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: tutorialPages.Array.data[5].subText
+      value: This mess isn't gonna clean itself! Good luck!
+      objectReference: {fileID: 0}
     - target: {fileID: 6339377209479766171, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: broomUIImage
       value: 
@@ -3819,6 +3891,10 @@ PrefabInstance:
     - target: {fileID: 8354320785317994865, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384282075902170871, guid: 6e66170322c083648b619b8921209d02, type: 3}
+      propertyPath: m_Name
+      value: Header
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2365966140369686452, guid: 6e66170322c083648b619b8921209d02, type: 3}
@@ -6756,6 +6832,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52a7604d7c911c84281b937791d43be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &694840932 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2064768178813983849, guid: 6e66170322c083648b619b8921209d02, type: 3}
+  m_PrefabInstance: {fileID: 397592364}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &733838283
@@ -15673,6 +15760,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1468590851 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4604483539491208430, guid: 6e66170322c083648b619b8921209d02, type: 3}
+  m_PrefabInstance: {fileID: 397592364}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1472400103
 PrefabInstance:
   m_ObjectHideFlags: 0

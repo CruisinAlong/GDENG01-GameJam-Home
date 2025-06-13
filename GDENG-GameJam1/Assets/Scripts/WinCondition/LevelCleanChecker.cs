@@ -27,7 +27,7 @@ public class LevelCleanChecker : MonoBehaviour
         Debug.Log($"[LevelCleanChecker] Total score to win: {totalScoreToWin}");
     }
 
-    // Call this after the player gains score
+
     public void CheckWinCondition(int playerScore)
     {
         Debug.Log($"[LevelCleanChecker] Player score: {playerScore}, Needed: {totalScoreToWin}");
@@ -41,7 +41,7 @@ public class LevelCleanChecker : MonoBehaviour
                 SfxManager.instance.PlaySFX(EventNames.SFXNames.WIN,0.4f);
             }
             // Optionally, pause the game here
-            // Time.timeScale = 0f;
+            Time.timeScale = 0f;
         }
     }
 }
