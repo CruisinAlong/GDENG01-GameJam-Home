@@ -9,7 +9,6 @@ public class LivingRoomBG : MonoBehaviour
     void Start()
     {
         SfxManager.instance.PlayLoopingSFX(EventNames.SFXNames.BG_TV,0.6f);
-        SfxManager.instance.PlayLoopingSFX(EventNames.SFXNames.BG_NIGHTTIME, 0.6f);
     }
 
     private void OnEnable()
@@ -26,7 +25,6 @@ public class LivingRoomBG : MonoBehaviour
     {
         Debug.Log("Stop BG");
         SfxManager.instance.StopSFX(EventNames.SFXNames.BG_TV);
-        SfxManager.instance.StopSFX(EventNames.SFXNames.BG_NIGHTTIME);
     }
 
     // Update is called once per frame

@@ -83,7 +83,6 @@ public class EventNames {
 		public const string BG_PLAYING = "Playing_BG";
 		public const string BG_PLAYING2 = "Playing2_BG";
 		public const string BG_PLAYING3 = "Playing3_BG";
-		public const string BG_NIGHTTIME = "Nighttime_BG";
 
         public const string STOP_BG = "STOP_BG";
 		
