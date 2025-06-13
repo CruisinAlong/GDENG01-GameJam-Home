@@ -178,4 +178,12 @@ public class SfxManager : MonoBehaviour
 
         activePool.Clear();
     }
+
+    public AudioClip GetClip(string name)
+    {
+        if (sfxClipLookup != null && sfxClipLookup.ContainsKey(name))
+            return sfxClipLookup[name];
+        return null;
+    }
+
 }

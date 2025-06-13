@@ -48,7 +48,7 @@ MonoBehaviour:
   audioPoolSize: 11
   sfxClips:
   - {fileID: 8300000, guid: 5b71561391ba5c34f8124d08c821e9e1, type: 3}
-  - {fileID: 8300000, guid: 78478c37bd3cc1f4a81f3e8cd764580c, type: 3}
+  - {fileID: 8300000, guid: 00e68d53693265f4681f0fba8e9596d0, type: 3}
   - {fileID: 8300000, guid: 117625a6c13da1a428aa331104efb5a8, type: 3}
   - {fileID: 8300000, guid: e73bbc39a31e87a49a00f0a1a6971f8c, type: 3}
   - {fileID: 8300000, guid: 11bffe0389d9b4445ae345a56757fb1b, type: 3}

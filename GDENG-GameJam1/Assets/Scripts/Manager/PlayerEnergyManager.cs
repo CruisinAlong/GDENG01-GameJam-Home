@@ -10,7 +10,7 @@ public class PlayerEnergyManager : MonoBehaviour
     public float maxEnergy = 100f;
     public float currentEnergy = 100f;
     public float drainRate = 5f;
-    public float energyGainPerClean = 10f;
+    public float energyGainPerClean = 100f;
 
     public Image batteryFillImage;
     public GameObject gameOverPanel;
