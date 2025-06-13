@@ -56,29 +56,29 @@ public class PlayerModeManager : MonoBehaviour
 
     private void Update()
     {
-        // Example: 1, 2, 3 keys to switch modes
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && IsModeUnlocked(PlayerMode.Collect))
         {
             currentMode = PlayerMode.Collect;
             EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.MOP_MODE);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && IsModeUnlocked(PlayerMode.Vacuum))
         {
             currentMode = PlayerMode.Vacuum;
             EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.VACUUM_MODE);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && IsModeUnlocked(PlayerMode.Spawn))
         {
             currentMode = PlayerMode.Spawn;
             EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.BROOM_MODE);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+
+        if (Input.GetKeyDown(KeyCode.Alpha4) && IsModeUnlocked(PlayerMode.Mode4))
         {
             currentMode = PlayerMode.Mode4;
             EventBroadcaster.Instance.PostEvent(EventNames.PlayerMode.MODE4);
         }
-        
     }
+
 }

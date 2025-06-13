@@ -3799,11 +3799,11 @@ PrefabInstance:
       propertyPath: tutorialPages.Array.data[2].subText
       value: You are also equipped with a vacuum, but not just any ordinary one,
         this one can suck up even the most unexpected things, a piece of bread, maybe
-        even a plant pot! All you need to do is hold left click.
+        even a plant pot! All you need to do is hold [LEFT CLICK].
       objectReference: {fileID: 0}
     - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: tutorialPages.Array.data[3].subText
-      value: You're also equipped with a hover booster! Hold the spacebar to reach
+      value: You're also equipped with a hover booster! Hold the [SPACEBAR] to reach
         spaces no other robotic cleaner can on their own!
       objectReference: {fileID: 0}
     - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}

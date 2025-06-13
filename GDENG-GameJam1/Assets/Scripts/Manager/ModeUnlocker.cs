@@ -16,7 +16,7 @@ public class ModeUnlocker : MonoBehaviour
 
         string scene = SceneManager.GetActiveScene().name;
 
-        // Set unlocked modes based on scene name
+
         if (scene == "Kitchen")
         {
             unlockedModes.Add(PlayerMode.Collect);

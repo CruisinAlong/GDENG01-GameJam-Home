@@ -6532,7 +6532,7 @@ PrefabInstance:
     - target: {fileID: 6084136226731712058, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: tutorialPages.Array.data[1].subText
       value: 'The family has given you a new weapon of doom! (For dirty stains at
-        least.) Using the brush needs you to use the SCROLL WHEEL when over a mess. '
+        least.) Using the brush needs you to use the [SCROLL WHEEL] when over a mess. '
       objectReference: {fileID: 0}
     - target: {fileID: 7858109395079206849, guid: 6e66170322c083648b619b8921209d02, type: 3}
       propertyPath: m_Name
