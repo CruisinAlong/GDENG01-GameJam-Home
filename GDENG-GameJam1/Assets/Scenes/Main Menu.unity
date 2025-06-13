@@ -1440,7 +1440,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1763511617}
   - component: {fileID: 1763511616}
-  - component: {fileID: 1763511615}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1448,14 +1447,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1763511615
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763511614}
-  m_Enabled: 1
 --- !u!20 &1763511616
 Camera:
   m_ObjectHideFlags: 0
@@ -1544,11 +1535,11 @@ PrefabInstance:
       objectReference: {fileID: 2565207225263750646, guid: 7059a17a162931546b5589fec0cc9c19, type: 3}
     - target: {fileID: 5731088015924965000, guid: 1e28fd27ad154474eb86147a97eee3f8, type: 3}
       propertyPath: sfxClips.Array.size
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5731088015924965000, guid: 1e28fd27ad154474eb86147a97eee3f8, type: 3}
       propertyPath: audioNames.Array.size
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5731088015924965000, guid: 1e28fd27ad154474eb86147a97eee3f8, type: 3}
       propertyPath: 'sfxClips.Array.data[11]'
@@ -1569,7 +1560,7 @@ PrefabInstance:
     - target: {fileID: 5731088015924965000, guid: 1e28fd27ad154474eb86147a97eee3f8, type: 3}
       propertyPath: 'sfxClips.Array.data[15]'
       value: 
-      objectReference: {fileID: 8300000, guid: 43a237cd4b3eb6d499ee63dff8f859e4, type: 3}
+      objectReference: {fileID: 8300000, guid: 8415486b38baa81479a38d5662c8276e, type: 3}
     - target: {fileID: 5731088015924965000, guid: 1e28fd27ad154474eb86147a97eee3f8, type: 3}
       propertyPath: 'audioNames.Array.data[11]'
       value: Dinner_BG
