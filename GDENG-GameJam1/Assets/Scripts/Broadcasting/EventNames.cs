@@ -60,6 +60,12 @@ public class EventNames {
 		public const string PAUSEMODE = "PAUSEMODE";
     }
 
+	public class Clean_Events
+	{
+		public const string NUM_CLEANABLES_LEFT = "NUM_CLEANABLES_LEFT";
+		public const string PARAM_CLEANABLES_LEFT = "PARAM_CLEANABLES_LEFT";
+	}
+
 	public class SFXNames
 	{
 		public const string BRUSH = "Brush";
